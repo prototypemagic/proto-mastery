@@ -15,24 +15,13 @@ for x in range(num_of):
     if heights[x] > highest:
         highest = heights[x]
         hp = x
-
-for x in range(num_of):
-    if heights[x] < lowest and heights != 0:
+    elif heights[x] < lowest:
         lowest = heights[x]
         lp = x
 
 print heights
 print lp,hp,highest,lowest
 counter = 0
-
-#for x in range(num_of):
-#    if heights[x] == lowest:
-#        lp = x
-#        break
-#for x in range(num_of):
-#    if heights[x] == highest:
-#        hp = x
-#        break
 
 while heights[0] != highest:
     hp = hp - 1
